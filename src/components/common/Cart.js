@@ -37,10 +37,10 @@ const mapStateProps = (state) => {
   }
 }
 
-// const mapDispatchProps = (dispatch) => {
-//   return {
-//     getBooks: dispatch(bookActions.fetchCart())
-//   };
-// };
+const mapDispatchProps = (dispatch) => {
+  return {
+    getBooks: dispatch(bookActions.fetchCart())
+  };
+};
 
 export default connect(mapStateProps, mapDispatchProps)(Cart);

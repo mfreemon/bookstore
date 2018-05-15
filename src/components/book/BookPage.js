@@ -21,9 +21,11 @@ class Book extends React.Component{
     return (
       <div>
         <h3>Books</h3>
-        <ul>
+        <ul className="book-container">
           {this.props.books.map((b, i) =>
-            <Link to={`/books-details/${b.id}`}><li key={i}>{b.book}</li></Link>
+            <Link className="book"  to={`/books-details/${b.id}`}>
+              <li key={i}>{b.book}</li>
+            </Link>
           )}
         </ul>
         <div>
